@@ -1,195 +1,73 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #f1f1f1;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.background {
-    background: url('https://cdn.pixabay.com/photo/2018/03/30/18/31/technology-3273651_960_720.jpg') no-repeat center center fixed;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
-
-/*
-.overlay {
-	background-color: rgba(0, 0, 0, 0.6);
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 1;
-}
-*/
-
-.container {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    height: 100%;
-    z-index: 2;
-}
 
 .form-container {
-    background-color: #ffffff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    width: 90%;
-    max-width: 600px;
-    height: auto;
+	max-width: 400px;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	background-color: #f2f2f2;
+	border-radius: 5px;
 }
 
-.form-container h1 {
-    font-size: 24px;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+.image-container {
+	text-align: center;
+	margin-bottom: 20px;
 }
 
-.form-container input {
-    background-color: #f1f1f1;
-    border: none;
-    padding: 12px 20px;
-    margin: 8px 0;
-    width: 100%;
-    border-radius: 20px;
-    font-size: 16px;
+img {
+	max-width: 100%;
+	height: auto;
 }
 
-.form-container button {
-    background-color: #4CAF50;
-    color: #ffffff;
-    border: none;
-    padding: 12px 20px;
-    margin: 8px 0;
-    width: 100%;
-    border-radius: 20px;
-    font-size: 16px;
-    cursor: pointer;
+h2 {
+	text-align: center;
+	margin-bottom: 20px;
 }
 
-.form-container button:hover {
-    background-color: #3e8e41;
+form label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
 }
 
-.form-container a {
-    color: #2196F3;
-    text-decoration: none;
-    margin-top: 20px;
+form input[type="text"], form input[type="email"], form input[type="password"] {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
 }
 
-.form-container a:hover {
-    text-decoration: underline;
+form button[type="submit"] {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
 }
 
-.overlay-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 100%;
-    width: 100%;
+p {
+	text-align: center;
 }
 
-/*
-.overlay-panel {
-	position: absolute;
-	top: 0;
-	width: 50%;
-	height: 100%;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-*/
-.overlay-left {
-    right: 0;
-    transform: translateX(0%);
+a {
+	color: #4CAF50;
+	text-decoration: none;
 }
 
-.overlay-right {
-    left: 0;
-    transform: translateX(0%);
+button[type="submit"]:hover {
+	background-color: #3e8e41;
 }
 
-.overlay-panel h1 {
-    font-size: 36px;
-    margin: 0;
-    padding: 0;
+input:focus {
+	border: 2px solid #4CAF50;
 }
 
-.overlay-panel p {
-    font-size: 16px;
-    margin: 20px 0;
-    padding: 0;
-    text-align: center;
+input::placeholder {
+	color: #ccc;
 }
 
-.overlay-panel button {
-    background-color: #4CAF50;
-    color: #ffffff;
-    border: none;
-    padding: 12px 20px;
-    margin: 8px 0;
-    width: 100%;
-    border-radius: 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
 
-.overlay-panel button:hover {
-    background-color: #3e8e41;
-}
-
-.overlay-right {
-    right: 0;
-    transform: translateX(0%);
-}
-
-.overlay-left {
-    left: 0;
-    transform: translateX(0%);
-}
-
-@media screen and (max-width: 700px) {
-    .form-container {
-        padding: 20px;
-    }
-    .overlay-panel {
-		font-size: 80%;
-	} 
-    /* 
-    .overlay-left {
-		transform: translateX(-100%);
-	}
-    .overlay-right {
-		transform: translateX(100%);
-	}
-    */
-    /*
-    .overlay {
-		display: none;
-	}
-    /*
-}
