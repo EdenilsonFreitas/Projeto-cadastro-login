@@ -113,4 +113,22 @@ input[type="checkbox"] + label:before {
 	right: -2px;
 	bottom: -2px;
 	border: 2px solid #ccc;
-	z-index: -1
+	z-index: -1;
+}
+
+body {
+    background-image: url("https://tse3.mm.bing.net/th?id=OIP.pwEj_54qUQ8YG2Jyr9kLDQHaFj&pid=Api&P=0");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    position: relative;
+}
